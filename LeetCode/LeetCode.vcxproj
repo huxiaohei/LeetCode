@@ -153,10 +153,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\AddTwoNumbers.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\TwoSum.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\AddTwoNumbers.hpp" />
     <ClInclude Include="include\TwoSum.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

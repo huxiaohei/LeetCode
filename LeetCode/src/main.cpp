@@ -7,9 +7,11 @@
 
 #include <iostream>
 #include "TwoSum.hpp"
+#include "AddTwoNumbers.hpp"
 
 int main() {
 	std::cout << "Hello World!\n";
 	TwoSum::test();
+	AddTwoNumbers::test();
 }
 
