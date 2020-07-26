@@ -15,9 +15,6 @@ void AddTwoNumbers::test() {
 	ListNode *l2 = instance.createNodeList(nums2);
 	ListNode *res = instance.addTwoNumbers(l1, l2);
 	instance.printListNode(res);
-	//instance.destroyListNode(l1);
-	//instance.destroyListNode(l2);
-	//instance.destroyListNode(res);
 }
 
 ListNode * AddTwoNumbers::createNodeList(vector<int> &nums) {
@@ -59,7 +56,9 @@ ListNode * AddTwoNumbers::addTwoNumbers(ListNode *l1, ListNode *l2) {
 		flag = sum / 10;
 		lastNode = l1;
 		l1 = l1->next;
+		ListNode *tmp = l2;
 		l2 = l2->next;
+		delete tmp;
 	}
 	if (l1 == NULL) {
 		lastNode->next = l2;
